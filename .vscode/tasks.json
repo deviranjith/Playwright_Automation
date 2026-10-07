@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Inspect authenticated Employee Master create form",
+			"type": "shell",
+			"command": "npx.cmd",
+			"args": [
+				"playwright",
+				"test",
+				"tests/employee-create.spec.ts",
+				"--project=chromium",
+				"--reporter=line"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
